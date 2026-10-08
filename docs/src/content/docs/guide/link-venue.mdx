@@ -1,0 +1,28 @@
+---
+title: Link a venue
+description: Connect your exchange account to the bot.
+sidebar:
+  order: 3
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+<Steps>
+
+1. Tap `🔗 Link platform` or send `/setup`, then choose the venue.
+2. Some venues show a short screen first with a link to create an account. Tap `I already have a wallet →` if you have one.
+3. Answer the prompts, one per credential. Each [venue page](/venues/) lists exactly what the bot asks for.
+4. The bot deletes your message right away, checks the credentials with the venue and stores them encrypted.
+5. On Hyperliquid, Lighter, Lighter RH and RiseX the bot then sends a one-tap signing link for Mimiq's fee. Open it, connect the wallet that owns the account and sign.
+
+</Steps>
+
+The signing page shows which wallet must sign. If you connect a different wallet, it tells you and does not ask for a signature. When the signature is in, the bot confirms and returns to the menu.
+
+<Aside type="note" title="Lighter and Lighter RH">
+Mimiq needs a Premium or Plus account. When you link, a Standard account is switched to Premium automatically, and Lighter's trading fees apply.
+</Aside>
+
+## Change a key later
+
+`⚙️ Settings` → `🔑 Change API Key`, then pick the venue.

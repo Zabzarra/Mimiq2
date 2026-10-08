@@ -1,0 +1,30 @@
+---
+title: Watch traders
+description: Fill alerts for any trader, without copying.
+sidebar:
+  order: 5
+---
+
+import { Steps } from '@astrojs/starlight/components';
+
+`👁 Watch Traders` sends you a message when a trader fills, without copying them. It works independently of copy trading, and it is available before you link a venue.
+
+<Steps>
+
+1. Open `👁 Watch Traders` and tap `➕ Add`.
+2. Pick the venue the trader is on. Hyperliquid, Arcus, RiseX and Lighter are supported.
+3. Send the wallet address (`0x…`). On Lighter you can send the account index or the wallet address.
+4. Give the trader a name, or send `-` to skip.
+
+</Steps>
+
+Tap a watched trader to change what you get:
+
+| Setting | Effect |
+|---|---|
+| Fills | A message for every fill |
+| Limits | A message when a resting limit order is placed or cancelled, where the venue supports it |
+| Pause / resume | Stop alerts without removing the trader |
+| Remove | Delete the trader from your list |
+
+On Lighter you get fills only.

@@ -1,0 +1,117 @@
+[
+ {
+  "id": "hyperliquid",
+  "name": "Hyperliquid",
+  "role": "both",
+  "logo": "/venues/hyperliquid.svg",
+  "h": 39,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "lighter",
+  "name": "Lighter",
+  "role": "both",
+  "logo": "/venues/lighter.svg",
+  "h": 28,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "risex",
+  "name": "RiseX",
+  "role": "both",
+  "logo": "/venues/risex.svg",
+  "h": 24,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "arcus",
+  "name": "Arcus",
+  "role": "both",
+  "logo": "/venues/arcus.png",
+  "h": 38,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "lighter_rh",
+  "name": "Lighter RH",
+  "role": "exec",
+  "logo": "/venues/lighter.svg",
+  "h": 28,
+  "crop": null,
+  "pill": null,
+  "tag": "Robinhood Chain"
+ },
+ {
+  "id": "hibachi",
+  "name": "Hibachi",
+  "role": "exec",
+  "logo": "/venues/hibachi.svg",
+  "h": 27,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "ondo",
+  "name": "Ondo Perps",
+  "role": "exec",
+  "logo": null,
+  "h": null,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "perpl",
+  "name": "Perpl",
+  "role": "exec",
+  "logo": "/venues/perpl.svg",
+  "h": 25,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "extended",
+  "name": "Extended",
+  "role": "exec",
+  "logo": "/venues/extended.svg",
+  "h": null,
+  "crop": {
+   "aspect": 1.9642857142857142,
+   "x": 0.62,
+   "y": 0.23,
+   "scale": 95
+  },
+  "pill": "#f4f7f9",
+  "tag": null
+ },
+ {
+  "id": "qfex",
+  "name": "QFEX",
+  "role": "exec",
+  "logo": "/venues/qfex.svg",
+  "h": 34,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ },
+ {
+  "id": "propr",
+  "name": "Propr",
+  "role": "exec",
+  "logo": "/venues/propr.svg",
+  "h": 26,
+  "crop": null,
+  "pill": null,
+  "tag": null
+ }
+]

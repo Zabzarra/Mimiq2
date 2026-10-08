@@ -1,0 +1,48 @@
+---
+title: Main menu and commands
+description: What you see in the bot and the commands you can type.
+sidebar:
+  order: 1
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+Open the bot and send `/start`. The menu shows the status of the selected wallet and the buttons for its mode.
+
+## Copy mode
+
+| Button | What it does |
+|---|---|
+| `▶️ Start copying` / `⏹ Stop copying` | Switch copying on or off |
+| `👤 Set Trader` / `👤 Change Trader` | Choose who to copy. See [Copy trading](/guide/copy-trading/) |
+| `👁 Watch Traders` | Fill alerts for any trader. See [Watch traders](/guide/watch-traders/) |
+| `🔗 Link platform` | Connect a venue. See [Link a venue](/guide/link-venue/) |
+| `📊 Positions` | View and manage open positions |
+| `➕ New Wallet` | Create another wallet |
+| `📊 Stats` | Volume, fees, PnL |
+| `🔁 Switch to DN` | Change this wallet to delta-neutral |
+| `⚙️ Settings` | Copy mode, notifications, keys, names |
+| `🔄 Refresh` · `❓ Help` | Reload the menu · short in-bot help |
+
+## Delta-neutral mode
+
+`➕ New pair` and `🤖 Smart DN` replace the trader buttons. `📊 Positions` shows your open pairs, and `🔁 Switch to Copy` changes the mode back. See [Delta-neutral](/guide/delta-neutral/) and [Smart DN plans](/guide/smart-dn/).
+
+## Before you link a venue
+
+A new account sees only `🔗 Link platform`, `👁 Watch Traders`, `🔄 Refresh` and `❓ Help`.
+
+## Commands
+
+| Command | Shows |
+|---|---|
+| `/start` | Main menu |
+| `/setup` | Link a platform |
+| `/positions` | Open positions |
+| `/history` | Recent trades |
+| `/stats` | Volume, fees, PnL, funding |
+| `/status` | Wallet and trader status |
+| `/deltaneutral` | Delta Neutral menu |
+| `/leavewaitlist` | Delete your waitlist entry |
+
+<Aside>Commands act on the wallet that is selected in the menu.</Aside>

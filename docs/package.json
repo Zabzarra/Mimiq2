@@ -1,0 +1,14 @@
+{
+  "name": "mimiq-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "0.30.6",
+    "astro": "5.0.9"
+  }
+}

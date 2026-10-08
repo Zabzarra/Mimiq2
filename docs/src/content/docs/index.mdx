@@ -1,0 +1,54 @@
+---
+title: What is Mimiq
+description: Copy trading and delta-neutral strategies across 11 perp DEXs. Non-custodial. Invite-only.
+template: splash
+hero:
+  title: Any trader's alpha. Any DEX's fees.
+  tagline: Copy trading and delta-neutral strategies across 11 perp DEXs. Non-custodial. Invite-only.
+  image:
+    file: ../../assets/mimiq-mark.svg
+  actions:
+    - text: Open the bot
+      link: https://t.me/Mimiq2bot
+      icon: telegram
+      variant: primary
+    - text: Quickstart
+      link: /start/quickstart/
+      icon: right-arrow
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import VenueGrid from '../../components/VenueGrid.astro';
+
+## Two ways to trade
+
+<CardGrid>
+  <Card title="Copy trading" icon="rocket">
+    Mirror a trader's positions on the venue you choose. Sized 1:1, proportional or with your own multiplier.
+  </Card>
+  <Card title="Delta-neutral" icon="random">
+    Long on one venue, short the same token on another. You earn the funding-rate spread.
+  </Card>
+  <Card title="Non-custodial" icon="approve-check">
+    Mimiq never holds your funds. You connect API keys that can trade, not withdraw.
+  </Card>
+  <Card title="Invite-only" icon="information">
+    You need an invite code to use the bot. No code yet? Join the waitlist in the bot.
+  </Card>
+</CardGrid>
+
+## Supported venues
+
+Link a venue with its API credentials. Four of them can also be a copy source.
+
+<VenueGrid />
+
+## Start here
+
+<CardGrid>
+  <LinkCard title="Quickstart" description="From invite code to your first position." href="/start/quickstart/" />
+  <LinkCard title="Which mode?" description="Copy trading or delta-neutral." href="/start/which-mode/" />
+  <LinkCard title="Fees" description="What each venue charges, and what Mimiq adds." href="/fees/" />
+  <LinkCard title="Security" description="How your keys are protected." href="/security/" />
+</CardGrid>

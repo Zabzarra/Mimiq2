@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="ambient" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.14"></stop>
+      <stop offset="45%" stop-color="#22d3ee" stop-opacity="0.05"></stop>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="starCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"></stop>
+      <stop offset="12%" stop-color="#ffffff" stop-opacity="0.95"></stop>
+      <stop offset="28%" stop-color="#cff8ff" stop-opacity="0.55"></stop>
+      <stop offset="55%" stop-color="#5fe3f5" stop-opacity="0.18"></stop>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"></stop>
+    </radialGradient>
+    <linearGradient id="spikeH" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"></stop>
+      <stop offset="48%" stop-color="#ffffff" stop-opacity="0.95"></stop>
+      <stop offset="52%" stop-color="#ffffff" stop-opacity="0.95"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </linearGradient>
+    <radialGradient id="vertex" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"></stop>
+      <stop offset="40%" stop-color="#e0faff" stop-opacity="0.9"></stop>
+      <stop offset="100%" stop-color="#7de3f5" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  
+  <rect x="0" y="0" width="600" height="600" fill="url(#ambient)"></rect>
+
+  
+
+  <g fill="none" stroke="#5fe3f5" stroke-linejoin="miter" stroke-linecap="round">
+
+    
+    <path d="M 300 135 L 115 195 L 155 480 L 300 420 Z" stroke-width="2.4" opacity="0.9"></path>
+
+    
+    <path d="M 300 135 L 485 195 L 445 480 L 300 420 Z" stroke-width="2.4" opacity="0.9"></path>
+
+    
+    
+    <path d="M 225 165 L 225 440" stroke-width="1.1" opacity="0.55"></path>
+    
+    <path d="M 375 165 L 375 440" stroke-width="1.1" opacity="0.55"></path>
+
+    
+    <path d="M 225 165 L 300 135 L 375 165" stroke-width="1" opacity="0.5"></path>
+    <path d="M 225 165 L 375 165" stroke-width="1" opacity="0.4"></path>
+    
+    <path d="M 225 165 L 345 145" stroke-width="0.9" opacity="0.45"></path>
+    <path d="M 375 165 L 255 145" stroke-width="0.9" opacity="0.45"></path>
+
+    
+    <path d="M 115 195 L 300 420" stroke-width="1" opacity="0.45"></path>
+    <path d="M 155 480 L 300 135" stroke-width="1" opacity="0.45"></path>
+
+    
+    <path d="M 485 195 L 300 420" stroke-width="1" opacity="0.45"></path>
+    <path d="M 445 480 L 300 135" stroke-width="1" opacity="0.45"></path>
+
+    
+    <path d="M 225 440 Q 300 455 375 440" stroke-width="0.9" opacity="0.45"></path>
+    <path d="M 225 440 L 300 420 L 375 440" stroke-width="0.9" opacity="0.45"></path>
+
+  </g>
+
+  
+  <line x1="300" y1="135" x2="300" y2="420" stroke="#5fe3f5" stroke-width="1.4" opacity="0.75"></line>
+
+  
+  <circle cx="300" cy="300" r="110" fill="url(#starCore)"></circle>
+  <circle cx="300" cy="300" r="55" fill="url(#starCore)" opacity="0.8"></circle>
+
+  
+  <g>
+    
+    <rect x="185" y="299.2" width="230" height="1.6" fill="url(#spikeH)"></rect>
+    
+    <rect x="299.3" y="225" width="1.4" height="150" fill="url(#spikeH)" transform="rotate(90 300 300)"></rect>
+    
+    <g opacity="0.55">
+      <rect x="215" y="299.5" width="170" height="1" fill="url(#spikeH)" transform="rotate(45 300 300)"></rect>
+      <rect x="215" y="299.5" width="170" height="1" fill="url(#spikeH)" transform="rotate(-45 300 300)"></rect>
+    </g>
+  </g>
+
+  
+  <circle cx="300" cy="300" r="7" fill="#ffffff"></circle>
+  <circle cx="300" cy="300" r="2.5" fill="#ffffff"></circle>
+
+  
+  <g>
+    <circle cx="300" cy="135" r="4.2" fill="url(#vertex)"></circle>
+    <circle cx="115" cy="195" r="4" fill="url(#vertex)"></circle>
+    <circle cx="485" cy="195" r="4" fill="url(#vertex)"></circle>
+    <circle cx="225" cy="165" r="3.3" fill="url(#vertex)"></circle>
+    <circle cx="375" cy="165" r="3.3" fill="url(#vertex)"></circle>
+    <circle cx="155" cy="480" r="4" fill="url(#vertex)"></circle>
+    <circle cx="445" cy="480" r="4" fill="url(#vertex)"></circle>
+    <circle cx="225" cy="440" r="3" fill="url(#vertex)"></circle>
+    <circle cx="375" cy="440" r="3" fill="url(#vertex)"></circle>
+    <circle cx="300" cy="420" r="3.3" fill="url(#vertex)"></circle>
+  </g>
+</svg>

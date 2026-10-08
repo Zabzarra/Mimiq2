@@ -1,0 +1,27 @@
+---
+import venues from '../data/venue-logos.json';
+
+// Logo sizes come from the main site's venues.js (measured so that all logos look equally big).
+const px = (v: any) => Math.round((v.h ?? 28) * 0.9);
+---
+
+<div class="mq-venues">
+  {venues.map((v: any) => (
+    <a class="mq-tile" href={`/venues/${v.id}/`}>
+      {v.logo ? (
+        v.crop ? (
+          <span class="mq-logo pill" style={`background:${v.pill ?? '#f4f7f9'}`}>
+            <span class="mq-crop" style={`width:${Math.round(v.crop.x * v.crop.scale * v.crop.aspect * 0.8)}px;height:${Math.round(v.crop.y * v.crop.scale * 0.8)}px`}>
+              <img src={v.logo} alt={v.name} style={`height:${Math.round(v.crop.scale * 0.8)}px`} loading="lazy" />
+            </span>
+          </span>
+        ) : (
+          <span class="mq-logo"><img src={v.logo} alt={v.name} style={`height:${px(v)}px`} loading="lazy" /></span>
+        )
+      ) : (
+        <span class="mq-logo"><span class="mq-textlogo">{v.name}</span></span>
+      )}
+      <span class="mq-name">{v.tag ?? (v.role === 'both' ? 'Source + execution' : 'Execution')}</span>
+    </a>
+  ))}
+</div>

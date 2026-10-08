@@ -1,0 +1,40 @@
+---
+title: Delta-neutral
+description: Long on one venue, short on another.
+sidebar:
+  order: 7
+---
+
+import { Steps, Aside } from '@astrojs/starlight/components';
+
+A delta-neutral **pair** is a long on one venue and a short on the same token on another. You hold no price direction and collect the funding difference between the two venues. You need two linked venues.
+
+Switch the wallet with `🔁 Switch to DN`, or open `/deltaneutral`.
+
+## Open a pair
+
+<Steps>
+
+1. Tap `➕ New pair`.
+2. Pick the long venue and the short venue, or a top-APR symbol from the list. HIP-3 markets on Hyperliquid are available through the `HIP-3` button.
+3. Enter the leverage, or tap `⚡ Max Leverage`.
+4. Enter the size. The screen shows the free margin on both venues.
+5. Choose the entry: `⚡ Taker — 1x` (one market order per leg) or `📊 Taker — TWAP` (several timed tranches).
+6. Optionally set stops and the funding auto-close, then `🚀 Open pair`.
+
+</Steps>
+
+## Manage a pair
+
+`📊 Open pairs` lists your pairs. Open one to see its details and use:
+
+| Button | Effect |
+|---|---|
+| `🎯 TP/SL` | Take-profit and stop-loss on both legs, as a price, a % move per leg, or a $ PnL per leg |
+| `🛡 Auto-close` | Close the pair when funding turns against it |
+| `💰 Cost cap` | Limit what the funding-turn close may cost; `🗑 Remove cap` clears it |
+| `❌ Close` | Close both legs after a confirmation that shows the expected PnL |
+
+<Aside type="caution">
+Every pair is a real position on both venues. If one venue is unreachable, the bot tells you instead of guessing the state.
+</Aside>

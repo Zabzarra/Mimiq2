@@ -1,6 +1,6 @@
 ---
 title: Main menu and commands
-description: What you see in the bot and the commands you can type.
+description: The bot menu, settings, stats and the commands you can type.
 sidebar:
   order: 1
 ---
@@ -31,6 +31,26 @@ Open the bot and send `/start`. The menu shows the status of the selected wallet
 ## Before you link a venue
 
 A new account sees only `🔗 Link platform`, `👁 Watch Traders`, `🔄 Refresh` and `❓ Help`.
+
+## Settings
+
+`⚙️ Settings` opens:
+
+| Button | What it does |
+|---|---|
+| Copy mode | `📊 Proportional (equity ratio)`, `🟰 1:1` or `✏️ Custom multiplier` |
+| `🔔 Notifications` | Toggle **Fills**, **Closes** and **Errors** |
+| `🔑 Change API Key` | Replace the credentials of a linked venue |
+| `🔀 Switch Active Venue` | Choose which linked venue the wallet trades on |
+| `✏️ Rename Wallet` | Rename the wallet |
+| `✏️ Rename Trader` | Rename the copied trader |
+| `⚙️ Leverage` | Set a max-leverage cap |
+
+## Stats and history
+
+`📊 Stats` (or `/stats`) shows total volume, total PnL, total fees and the blended cost per 1M traded, DN funding collected, and volume, cost per 1M and fees for each venue. A leading `≈` means the fee figure is partly an estimate.
+
+`/history` lists your recent trades and the closed delta-neutral pairs with their result. `/status` shows the wallet, its mode and its trader.
 
 ## Commands
 

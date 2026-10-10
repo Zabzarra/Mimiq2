@@ -29,20 +29,13 @@ export default defineConfig({
           { label: 'Copy Trading or Delta Neutral?', link: '/start/which-mode/' },
         ]},
         { label: 'Using the bot', autogenerate: { directory: 'guide' } },
-        { label: 'Concepts', items: [
-          { label: 'Non-custodial and your keys', link: '/concepts/non-custodial/' },
-        ]},
-        { label: 'Sources', link: '/sources/' },
         { label: 'Venues and fees', link: '/venues/' },
         { label: 'Trust', items: [
-          { label: 'Security', link: '/security/' },
+          { label: 'Security and your keys', link: '/security/' },
           { label: 'Privacy', link: '/privacy/' },
           { label: 'Risks', link: '/risks/' },
         ]},
-        { label: 'Help', items: [
-          { label: 'FAQ', link: '/faq/' },
-          { label: 'Glossary', link: '/glossary/' },
-        ]},
+        { label: 'Glossary', link: '/glossary/' },
       ],
     }),
   ],

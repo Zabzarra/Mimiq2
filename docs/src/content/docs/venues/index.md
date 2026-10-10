@@ -25,13 +25,37 @@ Four of the 11 venues can also be a **copy source**. What the bot asks for when 
 </tbody></table>
 </div>
 
-<p class="mq-note">Taker / maker are in basis points and include Mimiq's 1 bp fee (0.01% of trade value) where it is charged; the venue collects it on top of its own fee. Entry level, lowest volume tier, checked 8 Oct 2026. Rates fall with volume and change over time, so verify at the venue: <a href="/sources/">Sources</a>. RH = Robinhood Chain. SL/TP: native stop-loss and take-profit on the venue. Leverage: set per market from Mimiq. Limits: the copied trader's resting limit orders are mirrored. Venue names open the venue's site; some links are referral links.</p>
+<p class="mq-note">Taker / maker are in basis points and include Mimiq's 1 bp fee (0.01% of trade value) where it is charged; the venue collects it on top of its own fee. Entry level, lowest volume tier, checked 8 Oct 2026. Rates fall with volume and change over time, so verify at the venue (links below). RH = Robinhood Chain. SL/TP: native stop-loss and take-profit on the venue. Leverage: set per market from Mimiq. Limits: the copied trader's resting limit orders are mirrored. Venue names open the venue's site; some links are referral links.</p>
 
 <sup>1</sup> Lighter and Lighter RH need a Premium or Plus account (Lighter RH rates: under 1M USD volume). A Standard account is switched to Premium when you link it.<br />
 <sup>2</sup> Ondo: with the current 50% promotion (no end date announced); base rate 5.0 / 2.0 bp before Mimiq's fee.<br />
 <sup>3</sup> Extended: maker rebates are possible.<br />
 <sup>4</sup> QFEX: entry tier ("from"); equities cost more.<br />
 <sup>5</sup> Propr: no trading fees, a paid challenge instead.
+
+Minimum order: 10 USD, and 1 USD on RiseX, Hibachi and Extended.
+
+## Where the rates come from
+
+Fees and conditions belong to the venues and can change. These are the venues' own pages, checked 8 Oct 2026.
+
+<div class="mq-table-wrap">
+
+| Venue | Rates and conditions |
+|---|---|
+| Hyperliquid | [hyperliquid.gitbook.io](https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees) |
+| Lighter | [docs.lighter.xyz](https://docs.lighter.xyz/trading/trading-fees) |
+| RiseX | [docs.risechain.com](https://docs.risechain.com/docs/risex/trading/fees) |
+| Arcus | [api.arcus.xyz](https://api.arcus.xyz/v1/feetiers) |
+| Lighter RH | [apidocs.rh.lighter.xyz](https://apidocs.rh.lighter.xyz/docs/account-types) |
+| Hibachi | [docs.hibachi.xyz](https://docs.hibachi.xyz/hibachi-docs/trading/fees) |
+| Ondo Finance | [docs.ondoperps.xyz](https://docs.ondoperps.xyz/fees) |
+| Perpl | [docs.perpl.xyz](https://docs.perpl.xyz/exchange/fees) |
+| Extended | [docs.extended.exchange](https://docs.extended.exchange/extended-resources/trading/trading-fees-and-rebates) |
+| QFEX | [docs.qfex.com](https://docs.qfex.com/qfex/fees) |
+| Propr | [www.propr.xyz](https://www.propr.xyz/) |
+
+</div>
 
 Availability depends on your region. Check the venue before you sign up.
 Product names and logos are trademarks of their respective owners.

@@ -1,50 +1,66 @@
 ---
 title: Link a venue
-description: Connect your exchange account to the bot.
+description: Every screen from the platform list to the fee signature, shown with Hyperliquid as the example.
 sidebar:
   order: 3
 ---
 
 import { Steps, Aside } from '@astrojs/starlight/components';
 
+This walkthrough shows every screen you meet when you link a venue, using **Hyperliquid** as the example. Mimiq never receives your main wallet key. You give it an API key that can trade but cannot withdraw. More on that in [Security and your keys](/security/).
+
+Every venue follows the same path: pick it in the bot, create a key on the venue's side, send it to the bot, and where needed sign the fee approval once. Steps 1, 7 and 9 are the same everywhere. Steps 2 to 6 and 8 are the Hyperliquid details. On every other venue the bot tells you at that step what it needs and where to create it.
+
+**You need (for the example):** a Hyperliquid account that you can open on app.hyperliquid.xyz with the wallet that owns it, and the Mimiq bot open in Telegram.
+
 <Steps>
 
-1. Tap `🔗 Link platform` or send `/setup`, then choose the venue.
-2. Some venues show a short screen first with a link to create an account. Tap `I already have a wallet →` if you have one.
-3. Answer the prompts, one per credential. The table below lists what each venue needs.
-4. The bot deletes your message right away, checks the credentials with the venue and stores them encrypted.
-5. On Hyperliquid, Lighter, Lighter RH and RiseX the bot then sends a one-tap signing link for Mimiq's fee. Open it, connect the wallet that owns the account and sign.
+1. **Choose the venue.** In the bot tap `🔗 Link platform`, then `Hyperliquid`.
+
+   ![The Link a platform screen with the list of all 11 venues](../../../assets/screenshots/bot-link-platform.png)
+
+2. **The bot asks for an API wallet key.** Leave this chat open and switch to Hyperliquid. The bot tells you where to create the key, that it can only sign orders, and that it is not your master wallet key.
+
+   ![The bot asking for the Hyperliquid API wallet private key](../../../assets/screenshots/bot-hyperliquid-api-key-prompt.png)
+
+3. **Open the API page on Hyperliquid.** On app.hyperliquid.xyz open `More`, then `API`.
+
+   ![The Hyperliquid More menu with the API entry highlighted](../../../assets/screenshots/hl-more-api-menu.png)
+
+4. **Name and generate the key.** Type a name, for example `Mimiq`, tap `Generate`, then `Authorize API Wallet`.
+
+   ![The Hyperliquid API page with the name field, Generate and Authorize API Wallet buttons highlighted](../../../assets/screenshots/hl-api-page-generate.png)
+
+5. **Set the validity and authorize.** Hyperliquid asks for how many days the API wallet stays valid. The field in this screenshot shows 180, the maximum. Tap `Authorize`. Copy the **private key** shown below the button right now: Hyperliquid shows it only once.
+
+   ![The Authorize API Wallet dialog with name, address, validity in days and the one-time private key (hidden here)](../../../assets/screenshots/hl-authorize-api-wallet.png)
+
+6. **Confirm in your wallet.** Your wallet shows an `ApproveAgent` signature request for the API wallet's address. Confirm it. This only authorizes the API wallet on your account.
+
+   ![The wallet's signature request for ApproveAgent on app.hyperliquid.xyz](../../../assets/screenshots/hl-wallet-approve-agent.png)
+
+7. **Send the key to the bot.** Paste the private key into the chat. The bot deletes your message right away, checks the key with Hyperliquid and stores it encrypted.
+
+8. **Approve Mimiq's fee once.** The bot sends a message with a `Hyperliquid — Sign` button. It says the signature moves no funds and that Mimiq's builder fee is 1 bp (0.01%).
+
+   ![The bot message asking you to sign the builder fee approval](../../../assets/screenshots/bot-sign-builder-fee.png)
+
+   Tap the button. A Mimiq page opens. Connect the wallet that **owns the account**, your main wallet and not the API wallet, and sign. The signature is gas-free and off-chain.
+
+   ![The Mimiq page for the builder fee approval with the Connect Wallet button](../../../assets/screenshots/web-approve-builder-fee.png)
+
+9. **Done.** The bot confirms and returns to the menu. Next: [copy a trader](/guide/copy-trading/) or [open a delta-neutral pair](/guide/delta-neutral/).
 
 </Steps>
 
-The signing page shows which wallet must sign. If you connect a different wallet, it tells you and does not ask for a signature. When the signature is in, the bot confirms and returns to the menu.
+<Aside type="caution" title="Keep the key to yourself">
+The API wallet key can place orders on your account until it expires or you remove it. Send it only to the Mimiq bot, and never send your main wallet key.
+</Aside>
 
 <Aside type="note" title="Lighter and Lighter RH">
 Mimiq needs a Premium or Plus account. When you link, a Standard account is switched to Premium automatically, and Lighter's trading fees apply.
 </Aside>
 
-## What the bot asks for
-
-<div class="mq-table-wrap">
-
-| Venue | Credentials | Where it comes from |
-|---|---|---|
-| Hyperliquid | account ID, secret key | An API wallet key: app.hyperliquid.xyz → More → API, approved for your account. It can only sign orders, no withdrawals. Not your master key. |
-| Lighter | account ID, API key | Your Lighter API private key. |
-| Lighter RH | account ID, API key | Your Lighter (Robinhood Chain) API private key. |
-| RiseX | account ID, secret key | The session-signer key registered on your RiseX account (registerSigner). Not your master key. |
-| Arcus | account ID, API key | An Ed25519 private key (64 hex characters), created in the Arcus app or API. |
-| Hibachi | account ID, API key, secret key | The API private key from Settings → API Keys. Not your wallet key. |
-| Ondo | account ID, secret key | The API signing secret that pairs with your key ID (dashboard → API Keys). Not your wallet key. |
-| Perpl | API key, secret key | The Ed25519 private key shown when you created the API key (64 hex characters). Trade-only. |
-| Extended | API key, public key, secret key, vault ID | The Stark private key shown next to your API key. Not your master key. |
-| QFEX | API key, secret key | The API secret, shown once when the key is created. |
-| Propr | API key | Your Propr API key. |
-
-</div>
-
-Every key is stored encrypted. Venue links and rates: [Venues and fees](/venues/).
-
-## Change a key later
-
-`⚙️ Settings` → `🔑 Change API Key`, then pick the venue.
+<Aside type="note" title="When the key stops working">
+If the API wallet expires or you remove it on Hyperliquid, the bot sends you a message with a button to link it again. You can also replace the key yourself under `⚙️ Settings` → `🔑 Change API Key`.
+</Aside>

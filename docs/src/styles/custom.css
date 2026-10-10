@@ -229,3 +229,32 @@ footer { border-top: 1px solid var(--mq-line); }
 [data-has-hero] .sl-link-card { padding: 0.7rem 0.9rem; }
 [data-has-hero] .sl-link-card .title { font-size: 0.95rem; }
 [data-has-hero] .sl-link-card .description { font-size: 0.82rem; }
+
+/* ── venue capability matrix (venues overview) ── */
+.sl-markdown-content .mq-matrix table { min-width: 44rem; }
+.sl-markdown-content .mq-matrix :is(th, td) { padding: 0.5rem 0.7rem; text-align: center; vertical-align: middle; white-space: nowrap; }
+.sl-markdown-content .mq-matrix th { white-space: normal; line-height: 1.25; font-size: 0.66rem; letter-spacing: 0.08em; }
+.sl-markdown-content .mq-matrix :is(th, td):first-child { text-align: start; padding-inline-start: 1rem; position: sticky; left: 0; background: var(--mq-bg-1); }
+.sl-markdown-content .mq-matrix th:first-child { background: var(--mq-bg-2); }
+.sl-markdown-content .mq-matrix td:first-child a { font-weight: 600; }
+.sl-markdown-content .mq-matrix td:first-child small { margin-inline-start: 0.5rem; color: var(--mq-fg-dim); font-size: 0.7rem; }
+.sl-markdown-content .mq-matrix sup { color: var(--mq-cyan); margin-inline-start: 2px; }
+.sl-markdown-content .mq-matrix tbody tr:last-child td { border-bottom: 0; }
+.mq-y { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: rgba(95, 227, 245, 0.14); color: var(--mq-cyan); }
+.mq-y svg { width: 11px; height: 11px; }
+.mq-n { color: var(--mq-fg-mute); }
+.mq-num { font-family: var(--sl-font-mono); font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+/* mode columns are the point of the matrix: larger; everything else stays compact */
+.sl-markdown-content .mq-matrix th:not(.mq-mode):not(:first-child) { font-size: 0.6rem; padding-inline: 0.5rem; }
+.sl-markdown-content .mq-matrix td:not(.mq-mode):not(:first-child) { padding-inline: 0.5rem; font-size: 0.8rem; }
+.sl-markdown-content .mq-matrix th.mq-mode { font-size: 0.78rem; color: var(--mq-cyan); padding-inline: 1.1rem; background: var(--mq-bg-3); }
+.sl-markdown-content .mq-matrix td.mq-mode { padding-inline: 1.1rem; padding-block: 0.6rem; background: rgba(95, 227, 245, 0.035); }
+.mq-matrix td.mq-mode .mq-y { width: 26px; height: 26px; }
+.mq-matrix td.mq-mode .mq-y svg { width: 16px; height: 16px; }
+.mq-matrix td.mq-mode .mq-n { font-size: 1.1rem; }
+.sl-markdown-content .mq-matrix :is(th, td):nth-child(4) { border-right: 1px solid var(--mq-line-strong); }
+
+/* matrix tables (3+ columns) are compact; 2-column key/value tables keep the roomy spacing */
+.sl-markdown-content table:has(th:nth-child(3)) :is(th, td) { padding: 0.5rem 0.85rem; line-height: 1.4; }
+.sl-markdown-content table:has(th:nth-child(3)) :is(th, td):first-child { padding-inline-start: 1rem; }
+.mq-table-wrap table:has(th:nth-child(3)) { min-width: 36rem; }

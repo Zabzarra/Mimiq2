@@ -26,7 +26,7 @@ export default defineConfig({
         { label: 'Start', items: [
           { label: 'What is Mimiq', link: '/' },
           { label: 'Quickstart', link: '/start/quickstart/' },
-          { label: 'Which mode?', link: '/start/which-mode/' },
+          { label: 'Copy Trading or Delta Neutral?', link: '/start/which-mode/' },
         ]},
         { label: 'Using the bot', autogenerate: { directory: 'guide' } },
         { label: 'Concepts', items: [

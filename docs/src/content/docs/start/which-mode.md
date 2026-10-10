@@ -1,6 +1,6 @@
 ---
-title: Which mode?
-description: Copy trading or delta-neutral.
+title: Copy Trading or Delta Neutral?
+description: What each mode does, what it needs and how it is protected.
 ---
 
 | | Copy trading | Delta-neutral |

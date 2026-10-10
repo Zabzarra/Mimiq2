@@ -1,13 +1,22 @@
 ---
 import venues from '../data/venue-logos.json';
 
+// Each tile opens the venue itself (referral link where one exists).
+const href: Record<string, string> = {
+  hyperliquid: 'https://app.hyperliquid.xyz/join/MIMIQ', lighter: 'https://app.lighter.xyz/?referral=MIMIQ&source=none',
+  risex: 'https://www.rise.trade/invite/mimiq', arcus: 'https://app.arcus.xyz/ref/MIMIQ2',
+  lighter_rh: 'https://robinhoodchain.lighter.xyz/?referral=MIMIQ&source=none', hibachi: 'https://hibachi.xyz/r/mimiq',
+  ondo: 'https://app.ondoperps.xyz/?ref=M14GSK', perpl: 'https://app.perpl.xyz', extended: 'https://app.extended.exchange',
+  qfex: 'https://www.qfex.com', propr: 'https://propr.xyz',
+};
+
 // Logo sizes come from the main site's venues.js (measured so that all logos look equally big).
 const px = (v: any) => Math.round((v.h ?? 28) * 0.9);
 ---
 
 <div class="mq-venues">
   {venues.map((v: any) => (
-    <a class="mq-tile" href={`/venues/${v.id}/`}>
+    <a class="mq-tile" href={href[v.id]} target="_blank" rel="noopener">
       {v.logo ? (
         v.crop ? (
           <span class="mq-logo pill" style={`background:${v.pill ?? '#f4f7f9'}`}>

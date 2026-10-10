@@ -11,7 +11,7 @@ import { Steps, Aside } from '@astrojs/starlight/components';
 
 1. Tap `🔗 Link platform` or send `/setup`, then choose the venue.
 2. Some venues show a short screen first with a link to create an account. Tap `I already have a wallet →` if you have one.
-3. Answer the prompts, one per credential. Each [venue page](/venues/) lists exactly what the bot asks for.
+3. Answer the prompts, one per credential. The table below lists what each venue needs.
 4. The bot deletes your message right away, checks the credentials with the venue and stores them encrypted.
 5. On Hyperliquid, Lighter, Lighter RH and RiseX the bot then sends a one-tap signing link for Mimiq's fee. Open it, connect the wallet that owns the account and sign.
 
@@ -22,6 +22,28 @@ The signing page shows which wallet must sign. If you connect a different wallet
 <Aside type="note" title="Lighter and Lighter RH">
 Mimiq needs a Premium or Plus account. When you link, a Standard account is switched to Premium automatically, and Lighter's trading fees apply.
 </Aside>
+
+## What the bot asks for
+
+<div class="mq-table-wrap">
+
+| Venue | Credentials | Where it comes from |
+|---|---|---|
+| Hyperliquid | account ID, secret key | An API wallet key: app.hyperliquid.xyz → More → API, approved for your account. It can only sign orders, no withdrawals. Not your master key. |
+| Lighter | account ID, API key | Your Lighter API private key. |
+| Lighter RH | account ID, API key | Your Lighter (Robinhood Chain) API private key. |
+| RiseX | account ID, secret key | The session-signer key registered on your RiseX account (registerSigner). Not your master key. |
+| Arcus | account ID, API key | An Ed25519 private key (64 hex characters), created in the Arcus app or API. |
+| Hibachi | account ID, API key, secret key | The API private key from Settings → API Keys. Not your wallet key. |
+| Ondo | account ID, secret key | The API signing secret that pairs with your key ID (dashboard → API Keys). Not your wallet key. |
+| Perpl | API key, secret key | The Ed25519 private key shown when you created the API key (64 hex characters). Trade-only. |
+| Extended | API key, public key, secret key, vault ID | The Stark private key shown next to your API key. Not your master key. |
+| QFEX | API key, secret key | The API secret, shown once when the key is created. |
+| Propr | API key | Your Propr API key. |
+
+</div>
+
+Every key is stored encrypted. Venue links and rates: [Venues and fees](/venues/).
 
 ## Change a key later
 

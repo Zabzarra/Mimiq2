@@ -32,9 +32,8 @@ export default defineConfig({
         { label: 'Concepts', items: [
           { label: 'Non-custodial and your keys', link: '/concepts/non-custodial/' },
         ]},
-        { label: 'Fees', link: '/fees/' },
         { label: 'Sources', link: '/sources/' },
-        { label: 'Venues', autogenerate: { directory: 'venues' } },
+        { label: 'Venues and fees', link: '/venues/' },
         { label: 'Trust', items: [
           { label: 'Security', link: '/security/' },
           { label: 'Privacy', link: '/privacy/' },

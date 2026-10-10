@@ -260,5 +260,5 @@ footer { border-top: 1px solid var(--mq-line); }
 .sl-markdown-content .mq-matrix td:first-child a.mq-vlogo { display: inline-flex; align-items: center; gap: 0.4rem; text-decoration: none; }
 .mq-vlogo img { display: block; width: auto; max-width: none; }
 .mq-vtext { font-weight: 600; color: var(--mq-fg); font-size: 0.85rem; }
-.mq-rh { font-family: var(--sl-font-mono); font-size: 0.62rem; letter-spacing: 0.08em; color: var(--mq-cyan); border: 1px solid var(--mq-line-strong); border-radius: 4px; padding: 1px 4px; }
+.mq-rh { font-family: var(--sl-font-mono); font-size: 0.62rem; letter-spacing: 0.08em; color: var(--mq-fg); border: 1px solid var(--mq-line-strong); border-radius: 4px; padding: 1px 4px; }
 .sl-markdown-content .mq-matrix .mq-logo.pill { padding: 3px 8px; border-radius: 6px; }

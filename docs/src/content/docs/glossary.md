@@ -11,15 +11,15 @@ description: Terms used in these docs.
 
 **Execution venue.** The venue where your orders are placed.
 
-**Delta-neutral.** Long and short the same token on two venues, so price moves cancel out.
+**Delta-Neutral.** Long and short the same token on two venues, so price moves cancel out.
 
 **Funding rate.** A periodic payment between longs and shorts on perpetual futures.
 
-**Leg.** One side of a delta-neutral pair.
+**Leg.** One side of a Delta-Neutral pair.
 
 **Hedge guard.** Watches open pairs. If one leg is closed, stopped or liquidated, it closes the other.
 
-**Smart Plan.** A delta-neutral plan that opens, holds, closes and repeats on its own.
+**Smart Plan.** A Delta-Neutral plan that opens, holds, closes and repeats on its own.
 
 **Slippage ladder.** Mimiq retries an order with a wider price limit, from 0.3% up to 2.0%.
 

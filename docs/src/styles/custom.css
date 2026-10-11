@@ -263,3 +263,6 @@ footer { border-top: 1px solid var(--mq-line); }
 .mq-vlogo img { display: block; width: auto; max-width: none; }
 .mq-vtext { font-weight: 600; color: var(--mq-fg); font-size: 0.85rem; }
 .sl-markdown-content .mq-matrix .mq-logo.pill { padding: 3px 8px; border-radius: 6px; }
+
+/* "RH" next to the unchanged Lighter logo (Robinhood Chain deployment): plain text in the site's own font, not part of the logo */
+.mq-rh { font-family: var(--sl-font); font-size: 0.9rem; font-weight: 500; letter-spacing: 0.02em; color: var(--mq-fg); line-height: 1; }

@@ -1,0 +1,58 @@
+---
+title: Notifications
+description: What the bot's messages look like and what each one tells you.
+sidebar:
+  order: 9
+---
+
+Mimiq sends a message for every trade it makes, for problems it finds, and for the traders you watch. You can switch the kinds on and off under `⚙️ Settings` → `🔔 Notifications`.
+
+## Copy trading
+
+Every card starts with the wallet it belongs to. A position that opens or closes shows the ticker, side, size, entry price and leverage.
+
+![Position opened: ticker, side, size with its value, entry price and leverage](../../../assets/screenshots/card-position-opened.png)
+
+A close adds the exit price and a result block: realized PnL before and after fees, the fees, and the hold time.
+
+![Position closed with exit price, realized PnL (gross), fees, realized PnL (net) and hold time](../../../assets/screenshots/card-position-closed.png)
+
+Numbers that the venue has not reported yet show as pending and are filled in when they arrive.
+
+## Delta-Neutral
+
+An opened pair lists both legs. The bot then asks whether to close the pair automatically if funding turns negative.
+
+![Pair opened with both legs, leverage and the auto-close question](../../../assets/screenshots/card-pair-opened.png)
+
+A closed pair shows both legs, the combined result, fees, funding and the hold time.
+
+![Pair closed with both legs, realized PnL (gross), fees, realized PnL (net), funding and hold time](../../../assets/screenshots/card-pair-closed.png)
+
+If one leg is closed on a venue, the hedge guard closes the other leg and tells you.
+
+![DN pair broken: one leg was closed, the surviving leg was closed to stay delta-neutral](../../../assets/screenshots/card-pair-broken.png)
+
+## Watch Traders
+
+[Watch Traders](/guide/watch-traders/) alerts show the trader's name, what happened and the size. A closing fill is green with a profit and red with a loss. A canceled limit order is always red.
+
+![Watch alert: a trader closed a long with a profit](../../../assets/screenshots/card-watch-close.png)
+
+![Watch alert: a trader placed a limit order, resting and not filled](../../../assets/screenshots/card-watch-limit-placed.png)
+
+![Watch alert: a trader canceled a limit order](../../../assets/screenshots/card-watch-limit-canceled.png)
+
+## When a key stops working
+
+Mimiq checks your API keys regularly. If a venue no longer accepts one, you get a message with a button that opens the link flow for that venue and wallet. Open Delta-Neutral positions are not touched.
+
+![Key message for Lighter (Robinhood Chain) with a Re-link button](../../../assets/screenshots/card-key-lighter-rh.png)
+
+The positions screen says so too, instead of showing an empty list, and offers the same button.
+
+![Positions for one venue with a key that no longer works, and a Re-link button](../../../assets/screenshots/card-positions-key-error.png)
+
+On **All linked platforms**, a venue that is only temporarily unreachable is listed separately from a venue whose key no longer works.
+
+![All linked platforms: unreachable venues and keys that no longer work, listed separately](../../../assets/screenshots/card-positions-all-platforms.png)

@@ -34,6 +34,7 @@ export default defineConfig({
           { label: 'Security and your keys', link: '/security/' },
           { label: 'Privacy', link: '/privacy/' },
           { label: 'Risks', link: '/risks/' },
+          { label: 'Terms of Use', link: '/terms/' },
         ]},
         { label: 'Glossary', link: '/glossary/' },
       ],

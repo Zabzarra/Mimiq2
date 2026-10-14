@@ -19,6 +19,8 @@ Mimiq is **software**. It connects to trading accounts that **you** open and con
 
 Mimiq is **not** a broker, exchange, bank, custodian, investment adviser, portfolio manager, fund or financial service provider. We do not hold, receive or transfer your funds. We never ask for your wallet's private key. Your funds stay on the venue, in your account.
 
+**Closed beta.** The Service is currently offered as a closed beta, by invitation only. It is under active development, so its code, features, supported venues, fees and limits change frequently, and parts of it may be incomplete, unavailable or behave differently than described. We may admit, limit, suspend or remove users and access at any time. You acknowledge that beta software may contain bugs, interruptions and errors that can lead to financial loss, and that you use the Service in this state at your own risk. We recommend using only funds you can afford to lose and watching your positions on the venue yourself.
+
 ## 3. No advice, no recommendation
 
 Nothing in the Service, the bot messages, the website or the documentation is financial, investment, legal or tax advice, or an offer or recommendation to buy or sell anything. Traders you can watch or copy are **not selected, vetted or endorsed by us**. Past performance of any trader or strategy is not a guide to future results. You alone decide what to trade, whom to copy, how much to risk and when to stop.
@@ -60,7 +62,7 @@ Mimiq depends on third parties we do not control: trading venues and their APIs,
 
 ## 9. No warranty – software changes constantly
 
-The Service is provided **"as is" and "as available"**, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, accuracy, availability, non-infringement or uninterrupted, error-free or secure operation. Software can fail. Mimiq may be in beta for some features and is in continuous development: features, venues, fees, limits and behaviour can change, be limited or be removed at any time, with or without notice. We do not guarantee that any order will be placed, filled, copied, closed or stopped, or that any function works as described.
+The Service is provided **"as is" and "as available"**, without warranties of any kind, express or implied, including merchantability, fitness for a particular purpose, accuracy, availability, non-infringement or uninterrupted, error-free or secure operation. Software can fail. Mimiq is in closed beta (see section 2) and in continuous development: features, venues, fees, limits and behaviour can change, be limited or be removed at any time, with or without notice. We do not guarantee that any order will be placed, filled, copied, closed or stopped, or that any function works as described.
 
 ## 10. Fees and referral links
 

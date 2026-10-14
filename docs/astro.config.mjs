@@ -6,7 +6,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'Mimiq Docs',
-      description: 'Copy trading and Delta-Neutral strategies across 11 perp DEXs. Non-custodial. Invite-only.',
+      description: 'Copy trading and Delta-Neutral strategies across 11 perp DEXs. Non-custodial. Closed beta, invite-only.',
       logo: { src: './src/assets/mimiq-mark.svg', alt: 'Mimiq' },
       favicon: '/favicon.svg',
       customCss: ['./src/styles/custom.css'],

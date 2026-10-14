@@ -36,7 +36,6 @@ export default defineConfig({
           { label: 'Privacy', link: '/privacy/' },
           { label: 'Risks', link: '/risks/' },
           { label: 'Terms of Use', link: '/terms/' },
-          { label: 'Restricted regions', link: '/restricted-regions/' },
         ]},
         { label: 'Glossary', link: '/glossary/' },
       ],

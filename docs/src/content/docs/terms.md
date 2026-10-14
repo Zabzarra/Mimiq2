@@ -3,7 +3,7 @@ title: Terms of Use
 description: The terms under which Mimiq is provided. By using the bot you accept them.
 ---
 
-**Version:** 2026-10-12 · **Last updated:** 12 October 2026
+**Version:** 2026-10-14 · **Last updated:** 14 October 2026
 
 ## 1. Acceptance
 
